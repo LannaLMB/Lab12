@@ -11,6 +11,11 @@ namespace Lab12
         static void Main(string[] args)
         {
 
+            // Create Instances
+            HumanPlayer h = new HumanPlayer();
+
+           
+
             // Welcome Message
             Console.WriteLine("Welcome to Rock - Paper - Scissors\n");
             Console.WriteLine("Please Enter Your Name  --->  ");
@@ -18,12 +23,14 @@ namespace Lab12
 
 
             // Who Does The User Want To Play Against?
-            Console.WriteLine("Would You Like to Play Against The Rock or The Random?");
-            Console.ReadLine();
+            Console.WriteLine("Would You Like to Play Against The Rock or The Random?  Please Type the Word Rock or Random");
+            Console.ReadLine().ToUpper();
+
+            if (h.HumanChoice == "Rock" || h.HumanChoice == "Paper" || h.HumanChoice == "Scissors")
 
 
             // Player's Choice
-            Console.WriteLine($"You Chose dsd.  Let's Begin!\n");
+            Console.WriteLine($"You Chose.  Let's Begin!\n");
 
 
             // Decision Rock - Paper - Scissors

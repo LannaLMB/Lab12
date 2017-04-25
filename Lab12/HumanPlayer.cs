@@ -8,12 +8,13 @@ namespace Lab12
 {
     class HumanPlayer : Player  // Inherits Player Class
     {
-
         // This Class Will Allow the User to Choose Rock, Paper, or Scissors
 
         // Declare Variables
         private string Choice;
         private string Name;
+        private string Opponent;
+
 
 
         #region Properties
@@ -33,6 +34,7 @@ namespace Lab12
         }
 
 
+
         // Property - Human Name
         public string HumanName
         {
@@ -47,14 +49,31 @@ namespace Lab12
             }
         }
 
+
+
+        // Property - Human Opponent
+        public string HumanOpponent
+        {
+            get
+            {
+                return Opponent;
+            }
+
+            set
+            {
+                Opponent = value;
+            }
+        }
+
         #endregion
 
 
         // Constructor
-        public HumanPlayer(string ChoiceInput, string NameInput)
+        public HumanPlayer(string ChoiceInput, string NameInput, string OpponentInput)
         {
             Choice = ChoiceInput;
             Name = NameInput;
+            Opponent = OpponentInput;
         }
 
 
@@ -64,6 +83,7 @@ namespace Lab12
         {
             Choice = "Paper";
             Name = "Lanna";
+            Opponent = "Random";
         }
     }
 }

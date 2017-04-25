@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    class Player
+    abstract class Player
     {
         //public abstract 
-        
+        public abstract string GetRoshambo();
     }
 
     
