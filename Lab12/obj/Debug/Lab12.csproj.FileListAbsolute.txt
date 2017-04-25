@@ -1,0 +1,6 @@
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\bin\Debug\Lab12.exe.config
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\obj\Debug\Lab12.csprojResolveAssemblyReference.cache
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\bin\Debug\Lab12.exe
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\bin\Debug\Lab12.pdb
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\obj\Debug\Lab12.exe
+C:\Users\Jake & Lanna\Desktop\projects\Lab12\Lab12\obj\Debug\Lab12.pdb
