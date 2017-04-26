@@ -38,11 +38,32 @@ namespace Lab12
             {
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("You MUST Choose From The Following Options:  \n  ---  Rock\n  ---  Paper\n  ---  Scissors");
+                Console.Write("You MUST Choose From The Following Options:  \n  ---  Rock\n  ---  Paper\n  ---  Scissors\n  ----->  ");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Input = Console.ReadLine().ToUpper();
             }
 
+            return Input;
+        }
+
+
+
+
+        // Method to Get Valid Opponent
+        public static string GetValidOpponent()
+        {
+            string Input = Console.ReadLine().ToUpper();
+
+            // Validate Input
+            while ((Input != "ROCK") && (Input != "RANDOM"))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine();
+                Console.Write("You MUST Enter a ROCK or RANDOM --->   ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Input = Console.ReadLine().ToUpper();
+
+            }
             return Input;
         }
     }

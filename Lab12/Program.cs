@@ -21,7 +21,7 @@ namespace Lab12
 
             // Who Does The User Want To Play Against?
             Console.WriteLine("Would You Like to Play Against The Rock or The Random?  Please Type the Word Rock or Random");
-            string Opponent = Validation.GetValidString();
+            string Opponent = Validation.GetValidOpponent();
 
 
 
@@ -115,7 +115,7 @@ namespace Lab12
 
             else if ((HumanChoice == "PAPER") && (ComputerChoice == "ROCK"))
             {
-                Console.WriteLine("\nThe Computer Wins!");
+                Console.WriteLine("\n" + Name + " Wins!");
             }
 
 
@@ -126,7 +126,7 @@ namespace Lab12
 
             else if ((HumanChoice == "SCISSORS") && (ComputerChoice == "ROCK"))
             {
-                Console.WriteLine("\n" + Name + " Wins!");
+                Console.WriteLine("\nThe Computer Wins!");
             }
         }
 
