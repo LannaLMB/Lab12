@@ -8,45 +8,17 @@ namespace Lab12
 {
     class RandomPlayer : Player  // Inherits Player Class
     {
-        // This Class Will Choose Rock, Paper, or Scissors At Random
-
-
-        // Declare Variable
-        private string RandomChoice;
-
-
-        #region Properties
-
-        // Property - Random Choice
-        public string rRandomChoice
+        // Get Method GetRoshambo() To Work With RandomPlayer Class
+        public override string GetRoshambo()
         {
-            set
-            {
-                RandomChoice = value;
-            }
+            // Declare Array For Random Choice
+            string[] Game = { "Rock", "Paper", "Scissors" };
 
-            get
-            {
-                return RandomChoice;
-            }
+            // Get Random String From Array
+            int index = new Random().Next(Game.Length);
+            string CompChoice = (Game[index]);
+            return CompChoice;
         }
-
-        #endregion
-
-
-
-        // Constructor
-        public RandomPlayer(string RandomChoiceInput)
-        {
-            RandomChoice = RandomChoiceInput;
-        }
-
-
-        // Default Value
-        public RandomPlayer()
-        {
-            RandomChoice = "Scissors";
-        }
-
     }
 }
+

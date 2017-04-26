@@ -11,31 +11,41 @@ namespace Lab12
         static void Main(string[] args)
         {
 
-            // Create Instances
-            HumanPlayer h = new HumanPlayer();
-
-           
-
             // Welcome Message
-            Console.WriteLine("Welcome to Rock - Paper - Scissors\n");
-            Console.WriteLine("Please Enter Your Name  --->  ");
+            Console.WriteLine("\nWelcome to The Game of Rock --- Paper --- Scissors\n");
+            Console.Write("Please Enter Your Name  \n--->  ");
             Console.ReadLine();
+            Console.WriteLine("");
+
 
 
             // Who Does The User Want To Play Against?
             Console.WriteLine("Would You Like to Play Against The Rock or The Random?  Please Type the Word Rock or Random");
-            Console.ReadLine().ToUpper();
+            string Opponent = Console.ReadLine().ToUpper();
 
-            if (h.HumanChoice == "Rock" || h.HumanChoice == "Paper" || h.HumanChoice == "Scissors")
 
 
             // Player's Choice
-            Console.WriteLine($"You Chose.  Let's Begin!\n");
+            Console.WriteLine();
+            Console.WriteLine($"You Chose {Opponent} -- Let's Begin!\n");
 
 
-            // Decision Rock - Paper - Scissors
-            Console.WriteLine("Rock - Paper - Scissors");
 
+            // Create Instance of Human Player --- Get Human Version of GetRoshambo Method
+            HumanPlayer h = new HumanPlayer();
+            string HumanChoice = h.GetRoshambo();
+
+
+
+            // Create Instance of Random Player --- Get Random Version of GetRoshambo Method
+            RandomPlayer rp = new RandomPlayer();
+            string CompChoice = rp.GetRoshambo();
+            Console.WriteLine(CompChoice);
+
+
+
+
+            //if (h.GetRoshambo() =
 
 
 

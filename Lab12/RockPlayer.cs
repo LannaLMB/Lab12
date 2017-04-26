@@ -9,10 +9,12 @@ namespace Lab12
     class RockPlayer : Player  // Inherits Player Class
     {
 
-        // Method GetRoshambo - Only Return Rock Value
+        // // Get Method GetRoshambo() To Work With RockPlayer Class --- Only Return Rock Value
         public override string GetRoshambo()
         {
+
             return "Rock";
+
         }
     }
 }
