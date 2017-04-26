@@ -10,6 +10,7 @@ namespace Lab12
     {
         //public abstract 
         public abstract string GetRoshambo();
+
     }
 
     

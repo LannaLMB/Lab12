@@ -12,7 +12,7 @@ namespace Lab12
         public override string GetRoshambo()
         {
             // Declare Array For Random Choice
-            string[] Game = { "Rock", "Paper", "Scissors" };
+            string[] Game = { "ROCK", "PAPER", "SCISSORS" };
 
             // Get Random String From Array
             int index = new Random().Next(Game.Length);

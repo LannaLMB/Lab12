@@ -14,8 +14,8 @@ namespace Lab12
            
             Console.WriteLine();
             Console.WriteLine("Please Enter One Of The Following   ----->\tRock\t\tPaper\t\tScissors");
-            string HumanChoice = Console.ReadLine().ToUpper();
-            return HumanChoice;
+            string HumanChoice = Validation.GetValidChoice();
+            return HumanChoice.ToUpper();
         }
         
     }

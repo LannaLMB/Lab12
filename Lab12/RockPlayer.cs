@@ -13,7 +13,7 @@ namespace Lab12
         public override string GetRoshambo()
         {
 
-            return "Rock";
+            return "ROCK";
 
         }
     }
